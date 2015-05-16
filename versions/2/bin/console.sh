@@ -20,7 +20,7 @@ done
 PRGDIR=`dirname "$PRG"`
 
 # Only set ORIENTDB_HOME if not already set
-[ -f "$ORIENTDB_HOME"/lib/orientdb-tools-2.0.5.jar ] || ORIENTDB_HOME=`cd "$PRGDIR/.." ; pwd`
+[ -f "$ORIENTDB_HOME"/lib/orientdb-tools-2.0.9.jar ] || ORIENTDB_HOME=`cd "$PRGDIR/.." ; pwd`
 export ORIENTDB_HOME
 cd "$ORIENTDB_HOME/bin"
 
@@ -40,4 +40,4 @@ TRUSTSTORE=$ORIENTDB_HOME/config/cert/orientdb-console.ts
 TRUSTSTORE_PASS=password
 SSL_OPTS="-Xmx512m -Dclient.ssl.enabled=false -Djavax.net.ssl.keyStore=$KEYSTORE -Djavax.net.ssl.keyStorePassword=$KEYSTORE_PASS -Djavax.net.ssl.trustStore=$TRUSTSTORE -Djavax.net.ssl.trustStorePassword=$TRUSTSTORE_PASS"
 
-"$JAVA" -client $JAVA_OPTS $ORIENTDB_SETTINGS $SSL_OPTS -Dfile.encoding=utf-8 -Dorientdb.build.number="UNKNOWN@r${buildNumber}; 2015-03-12 22:59:10+0000" -cp "$ORIENTDB_HOME/lib/orientdb-tools-2.0.5.jar:$ORIENTDB_HOME/lib/*:$ORIENTDB_HOME/plugins/*" com.orientechnologies.orient.graph.console.OGremlinConsole $*
+"$JAVA" -client $JAVA_OPTS $ORIENTDB_SETTINGS $SSL_OPTS -Dfile.encoding=utf-8 -Dorientdb.build.number="UNKNOWN@r${buildNumber}; 2015-05-14 21:57:10+0000" -cp "$ORIENTDB_HOME/lib/orientdb-tools-2.0.9.jar:$ORIENTDB_HOME/lib/*:$ORIENTDB_HOME/plugins/*" com.orientechnologies.orient.graph.console.OGremlinConsole $*

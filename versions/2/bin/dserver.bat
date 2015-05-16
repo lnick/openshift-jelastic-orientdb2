@@ -76,6 +76,6 @@ set MAXHEAP=-Xmx512m
 rem ORIENTDB MAXIMUM DISKCACHE IN MB, EXAMPLE 8192 FOR 8GB
 set MAXDISKCACHE=
 
-call %JAVA% -server %JAVA_OPTS% %MAXHEAP% %JAVA_OPTS_SCRIPT% %ORIENTDB_SETTINGS% %MAXDISKCACHE% -Djava.util.logging.config.file="%LOG_FILE%" -Dorientdb.config.file="%CONFIG_FILE%" -Dorientdb.www.path="%WWW_PATH%" -Dorientdb.build.number="UNKNOWN@r${buildNumber}; 2015-03-12 22:59:10+0000" -cp "%ORIENTDB_HOME%\lib\*;" %CMD_LINE_ARGS% com.orientechnologies.orient.server.OServerMain
+call %JAVA% -server %JAVA_OPTS% %MAXHEAP% %JAVA_OPTS_SCRIPT% %ORIENTDB_SETTINGS% %MAXDISKCACHE% -Djava.util.logging.config.file="%LOG_FILE%" -Dorientdb.config.file="%CONFIG_FILE%" -Dorientdb.www.path="%WWW_PATH%" -Dorientdb.build.number="UNKNOWN@r${buildNumber}; 2015-05-14 21:57:10+0000" -cp "%ORIENTDB_HOME%\lib\*;" %CMD_LINE_ARGS% com.orientechnologies.orient.server.OServerMain
 
 :end
