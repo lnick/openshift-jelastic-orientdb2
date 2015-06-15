@@ -8,7 +8,7 @@ License-Url:
 Vendor: Orient Technologies 
 Cartridge-Version: 0.0.1
 Cartridge-Vendor: jelastic
-Source-Url: https://github.com/jelastic-public-cartridges/openshift-jelastic-orientdb2.git
+Source-Url: https://github.com/jelastic-public-cartridges/openshift-jelastic-orientdb2.git 
 Categories:
   - service
   - database
@@ -39,7 +39,7 @@ Cart-Data:
     Type: environment
     Description: "Unique ID which identified the gear. This value changes between gears."
 Provides:
-  - orientdb-2.0.5
+  - orientdb-2.0.10
   - "orientdb"
 Scaling:
   Min: 1
